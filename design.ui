@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res-rc.qrc">
+    <normaloff>:/icons/icons/loop_v1_icon.svg</normaloff>:/icons/icons/loop_v1_icon.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #e6f2ff;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+QPushButton {
+    background-color: #b3d9ff;
+    border: none;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #3399ff;
+}
+QPushButton:pressed {
+    background-color: #0066cc;
+}
+QListView {
+    background-color: #99ccff;
+    border: 5px solid #001a33;
+    border-radius: 10px;
+}
+QSlider::groove:horizontal {
+    border: 1px solid #99ccff;
+	background-color: #001a33;
+    height: 5px;
+    margin: 0px;
+    }
+QSlider::handle:horizontal {
+    background-color: #000000;
+    border: none;
+	border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    margin: -15px 0px;
+    }
+QSlider::handle:vertical {
+    background-color: #000000;
+    border: none;
+	border-radius: 10px;
+    height: 20px;
+    }
+QSlider::groove:vertical {
+    border: 1px solid #99ccff;
+	background-color: #001a33;
+	width: 10px;
+    margin: 0px;
+    }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="lbl_photo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>1</width>
+              <height>1</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>350</width>
+              <height>350</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid black;
+border-radius: 10px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="res-rc.qrc">:/icons/icons/album_cover_sample.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>SONG_AUTHOR - SONG_NAME</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_time">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="sldr_progress">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btn_stop">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/stop_icon.svg</normaloff>:/icons/icons/stop_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="btn_theme">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/theme.svg</normaloff>:/icons/icons/theme.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btn_randow">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/random_icon.svg</normaloff>:/icons/icons/random_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="btn_loop">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/loop_v2_icon.svg</normaloff>:/icons/icons/loop_v2_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn_pause">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/pause_icon.svg</normaloff>:/icons/icons/pause_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btn_next">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/next_icon.svg</normaloff>:/icons/icons/next_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn_previous">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/previous_icon.svg</normaloff>:/icons/icons/previous_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="btn_add_playlist">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/playlist_add_icon.svg</normaloff>:/icons/icons/playlist_add_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="btn_mute">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/mute.svg</normaloff>:/icons/icons/mute.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btn_play">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/play_icon.svg</normaloff>:/icons/icons/play_icon.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="btn_add_playlist_from_youtube">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res-rc.qrc">
+              <normaloff>:/icons/icons/playlist.png</normaloff>:/icons/icons/playlist.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QSlider" name="sldr_volume">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="value">
+           <number>80</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="lst_playlist"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/album_cover.svg</file>
+    <file>icons/album_cover_sample.png</file>
+    <file>icons/loop_v1_icon.svg</file>
+    <file>icons/loop_v2_icon.svg</file>
+    <file>icons/menu_icon.svg</file>
+    <file>icons/mute.svg</file>
+    <file>icons/next_icon.svg</file>
+    <file>icons/pause_icon.svg</file>
+    <file>icons/play_icon.svg</file>
+    <file>icons/playlist.png</file>
+    <file>icons/playlist_add_icon.svg</file>
+    <file>icons/playlist_play_icon.svg</file>
+    <file>icons/previous_icon.svg</file>
+    <file>icons/random_icon.svg</file>
+    <file>icons/stop_icon.svg</file>
+    <file>icons/theme.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,8 @@
+F:/Reaper Music/Test_mp3
+F:/Reaper Music/Test_wav
+F:/PythonProjects/Audiplayer_2/music_from_youtube
+C:/Users/HOME/Downloads/Red Hot Chili Peppers/RDOC_WAVE
+F:/PythonProjects/Audiplayer_2/new_folder_for_youtube_playlist
+F:/Reaper Music/untitled
+F:/Reaper Music/Test_ogg
+F:/Reaper Music/S
